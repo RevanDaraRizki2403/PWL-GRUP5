@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200">
+    <!-- Header -->
+    <header class="bg-sky-500 text-white p-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold ">Jago Inggris Club</h1>
+            <div>
+                <button class="bg-white text-blue-600 px-4 py-2 rounded shadow">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto my-10">
+        <!-- awalDashboard Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Stats Card -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Your Stats</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-blue-100 p-4 rounded text-center">
+                        <h3 class="text-lg font-bold text-blue-600">0</h3>
+                        <p class="text-gray-600">Courses</p>
+                    </div>
+                    <div class="bg-green-100 p-4 rounded text-center">
+                        <h3 class="text-lg font-bold text-green-600">0</h3>
+                        <p class="text-gray-600">Completed</p>
+                    </div>
+                    <div class="bg-yellow-100 p-4 rounded text-center">
+                        <h3 class="text-lg font-bold text-yellow-600">0</h3>
+                        <p class="text-gray-600">Pending</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Courses -->
+            <div class="bg-white p-6 rounded-lg shadow md:col-span-2">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Active Courses</h2>
+                <ul>
+                    <li class="bg-gray-50 p-4 mb-2 rounded-lg flex justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">English Grammar - Intermediate</h3>
+                            <p class="text-gray-600">Progress: 0%</p>
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Continue</button>
+                    </li>
+                    <li class="bg-gray-50 p-4 mb-2 rounded-lg flex justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Speaking Fluency - Beginner</h3>
+                            <p class="text-gray-600">Progress: 0%</p>
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Continue</button>
+                    </li>
+                    <li class="bg-gray-50 p-4 mb-2 rounded-lg flex justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Vocabulary Builder - Advanced</h3>
+                            <p class="text-gray-600">Progress: 0%</p>
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Continue</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Courses List -->
+        <div class="bg-white p-6 mt-8 rounded-lg shadow">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Available Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-bold text-gray-800">English for Business</h3>
+                    <p class="text-gray-600">Level: Advanced</p>
+                    <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded-lg">Enroll</button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-bold text-gray-800">Basic English Conversation</h3>
+                    <p class="text-gray-600">Level: Beginner</p>
+                    <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded-lg">Enroll</button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-bold text-gray-800">IELTS Preparation</h3>
+                    <p class="text-gray-600">Level: Intermediate</p>
+                    <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded-lg">Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
