@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <div class="flex min-h-screen">
+        
+        <div class="w-1/2 bg-blue-950 p-12 flex flex-col justify-center">
+            <div class="text-white mb-8 text-3xl font-bold text-center">REGISTER</div>
+            
+            <form class="space-y-4">
+                <div class="w-full max-w-screen-lg bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+                    <div>
+                        <label class="text-gray-400" for="name">Name</label>
+                        <input type="text" id="name" class="w-full p-3 bg-white text-black rounded-md" placeholder="Full Name">
+                    </div>
+                    
+                    <div>
+                        <label class="text-gray-400" for="username">Username</label>
+                        <input type="text" id="username" class="w-full p-3 bg-white text-black rounded-md" placeholder="Username">
+                    </div>
+                    
+                    <div>
+                        <label class="text-gray-400" for="email">Email</label>
+                        <input type="email" id="email" class="w-full p-3 bg-white text-black rounded-md" placeholder="Email Address">
+                    </div>
+            
+                    <div>
+                        <label class="text-gray-400" for="password">Password</label>
+                        <input type="password" id="password" class="w-full p-3 bg-white text-black rounded-md" placeholder="Password">
+                    </div>
+            
+                    <div>
+                        <label class="text-gray-400" for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" class="w-full p-3 bg-white text-black rounded-md" placeholder="Confirm Password">
+                    </div>
+            
+                    <br>
+                    <button type="submit" class="w-full bg-blue-900 hover:bg-blue-500 text-white py-4 rounded-md font-bold">
+                        Create Account
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="relative w-1/2">
+            <img src="dist/img/laut.jpg" alt="background image" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
+                <h2 class="text-2xl font-bold mb-2">Sign Up</h2>
+                <p class="mb-8">Sign Up With An Account</p>
+
+                <div class="flex space-x-6 mb-6">
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-500 transition">
+                            <img src="dist/img/gmail.png" alt="Gmail Icon">
+                        </div>
+                        <span class="mt-2 text-sm">Gmail</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition">
+                            <img src="dist/img/fb.png" alt="Facebook Icon">
+                        </div>
+                        <span class="mt-2 text-sm">Facebook</span>
+                    </a>
+                </div>
+
+                <p class="mt-4 text-sm">
+                    <a href="#" class="text-blue-300 font-semibold hover:underline">Create account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
